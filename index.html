@@ -7,29 +7,62 @@
     <style>
         body {
             font-family: arial, sans-serif;
+            margin-right: 1000px;
              }
         #Livre {
-            margin-top: -300px
-            padding-top: -300px;
+            padding: 0px;
+            margin-left: 90px;
+            margin-top: -120px;
         }
         h6 {
             font-weight: bold;
             text-decoration: underline;
-            color: 255,140,0;
+            color: RGB(255,140,0);
+        }
+        h1 {
+            padding: 0px;
+            margin: 0px;
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 35px;
+        }
+        h2, h3 {
+            border-left-style: solid;
+            border-left-width: 7px;
+            border-color: gray;
+            background-color: gainsboro;
+            padding: 10px;
+        }
+        #Sommaire {
+            border: solid;
+            border-width: 2px;
+            margin-right: 700px;
+            margin-left: 20px;
+            padding: 0px;
+        }
+        #ImageSommaire {
+            margin-top: -200px;
+            margin-left: 210px;
+            margin-bottom: 28px;
+        }
     </style>
     <body> 
         <h1>Blog</h1>
-        <img class="Livre" src="data:image/png;base64,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"
-             alt="Image de livre">
+        <img id="Livre" src="https://image.flaticon.com/icons/png/512/25/25363.png"
+             alt="Image de livre" width="50px">
 
-        <h3>Sommaire :</h3>
+             <h3>Sommaire :</h3>
+        <div id="Sommaire">
         <ul>
             <li><a href ="#first">Premier poste</a></li>
             <li><a href ="#second">Deuxième poste</a></li>
             <li><a href ="#3nd">Troisième poste</a></li>
         </ul>
+        </div>
+        <img id="ImageSommaire" src="https://pngimage.net/wp-content/uploads/2018/06/sommaire-png-4.png"
+        alt="Image Sommaire" width="60">
         
-        <h2 class="first">Premier Poste</h2>
+        <h2 id="first">Premier Poste</h2>
         <h6>10 Décembre 2020</h6>
         
         <p>
@@ -38,7 +71,7 @@
             À l'atterrissage nous nous sommes directement allé à l'hôtel, j'ai passé un super bon weekend puis nous sommes rentré.
         </p>
         
-        <h2 class="second">Deuxième Poste</h2>
+        <h2 id="second">Deuxième Poste</h2>
         <h6>2 Mars 2017</h6>
         
         <p>
@@ -48,7 +81,7 @@
         
         <iframe width="320" height="180" src="https://www.youtube.com/embed/tx2xCNj93Iw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         
-        <h2 class="3nd">Troisième Poste</h2>
+        <h2 id="3nd">Troisième Poste</h2>
         <h6>1 Janvier 2019</h6>
         
         <p>
